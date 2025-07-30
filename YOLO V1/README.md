@@ -1,0 +1,1 @@
+This file contain both of my YOLO V1 codes. The first one being the one with very detailed exaplations about the code and the rescources that you can learn from and the second one being the pure code of YOLO V1 with no explanations.
