@@ -6,7 +6,7 @@ A **deep dive** into every component of the YOLO V1 object detector — from **d
 
 ## Repository Structure
 
-YOLOv1-PyTorch/
+YOLOv1-PyTorch/  
 ├── YOLO V1/                          # directory containing both notebooks
 │   ├── YOLO-V1-Explanation.ipynb     # highly comprehensive deep-dive notebook: full theory, derivations, annotated PyTorch code, visualization of results, and explanatory images for clarity
 │   │   • Pascal VOC download & preprocessing  
