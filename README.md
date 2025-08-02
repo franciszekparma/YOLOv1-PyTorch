@@ -6,8 +6,6 @@ A **deep dive** into every component of the YOLO V1 object detector — from **d
 
 ## Repository Structure
 
-## Repository Structure
-
 ```plaintext
 YOLOv1-PyTorch/  
 ├── YOLO V1/                           # directory containing both notebooks  
