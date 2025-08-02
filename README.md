@@ -6,24 +6,27 @@ A **deep dive** into every component of the YOLO V1 object detector — from **d
 
 ## Repository Structure
 
+## Repository Structure
+
+```plaintext
 YOLOv1-PyTorch/  
-├── YOLO V1/                          # directory containing both notebooks  
-│   ├── YOLO-V1-Explanation.ipynb     # highly comprehensive deep-dive notebook: full theory, derivations, annotated PyTorch code, visualization of results, and explanatory images for clarity  
+├── YOLO V1/                           # directory containing both notebooks  
+│   ├── YOLO-V1-Explanation.ipynb      # highly comprehensive deep-dive notebook  
 │   │   ├── Pascal VOC download & preprocessing  
 │   │   ├── Detailed model architecture breakdown  
 │   │   ├── Loss function derivation & implementation  
 │   │   ├── Training loop with logging & checkpoints  
 │   │   └── Inference examples with visualization  
-│   └── YOLO-V1-Pure-Code.ipynb       # end-to-end pipeline: pure code only (no extra commentary)  
+│   └── YOLO-V1-Pure-Code.ipynb        # end-to-end pipeline: pure code only  
 │       ├── Data loading  
 │       ├── Model definition  
 │       ├── Loss & optimization  
 │       ├── Training & evaluation  
-│       └── Inference with bounding box visualization  
-├── sheep.png                         # sample inference result on a sheep image  
-├── biker.png                         # sample inference result on a bicycle image  
-└── README.md                         # this document  
-
+│       └── Inference with bounding-box visualization  
+├── sheep.png                          # sample inference result on a sheep image  
+├── biker.png                          # sample inference result on a bicycle image  
+└── README.md                          # this document    
+```
 ---
 
 ## Notebooks Overview
