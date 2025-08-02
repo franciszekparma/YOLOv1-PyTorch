@@ -1,54 +1,103 @@
-# YOLO V1 from Scratch
+# YOLOv1-PyTorch
 
-**A deep dive into every component of the YOLO V1 object detector**—from data download and preprocessing, through network architecture and loss derivation, all the way to training loops, evaluation, and inference. Whether you’re completely new to YOLO or you’re looking to understand the nitty-gritty details under the hood, this repo has you covered.
+A deep dive into every component of the YOLO V1 object detector—from downloading and preparing the Pascal VOC data, through network architecture and loss formulation, all the way to training, evaluation, and real-time inference. This repository is designed to give you a clear, end-to-end understanding of how YOLO V1 works under the hood in PyTorch.
 
 ---
 
-## 📚 What’s Inside
+## Repository Structure
+
+YOLOv1-PyTorch/
+├── YOLO V1/                          # directory containing both notebooks
+│   ├── YOLO-V1-Explanation.ipynb     # highly comprehensive deep-dive notebook: full theory, derivations, annotated PyTorch code, visualization of results, and explanatory images for clarity
+│   │   • Pascal VOC download & preprocessing  
+│   │   • Detailed model architecture breakdown  
+│   │   • Loss function derivation & implementation  
+│   │   • Training loop with logging & checkpoints  
+│   │   • Inference examples with visualization  
+│   └── YOLO-V1-Pure-Code.ipynb       # end-to-end pipeline: pure code only (no extra commentary)
+│       • Data loading  
+│       • Model definition  
+│       • Loss & optimization  
+│       • Training & evaluation  
+│       • Inference with bounding box visualization  
+├── sheep.png                         # sample inference result on a sheep image  
+├── biker.png                         # sample inference result on a bicycle image  
+└── README.md                         # this document  
+
+---
+
+## Notebooks Overview
 
 - **YOLO-V1-Explanation.ipynb**  
-  A _fully annotated_ Jupyter notebook that walks you through:
-  1. **Resources & References**  
-     - Link to the original [YOLO V1 paper](https://arxiv.org/abs/1506.02640)  
-     - Recommended video tutorials  
-  2. **Getting the Data**  
-     - Downloading Pascal VOC via `opendatasets`  
-     - Directory structure and file formats  
-  3. **Libraries & Imports**  
-     - PyTorch, torchvision, NumPy, Matplotlib, etc.  
-  4. **Utility Functions**  
-     - Intersection over Union (IoU)  
-     - Bounding box conversions  
-     - Non-Max Suppression  
-  5. **Model Architecture**  
-     - Grid split, convolutional backbone, prediction heads  
-     - Tensor shapes at every stage  
-  6. **Loss Function**  
-     - Mathematical derivation of the YOLO loss  
-     - PyTorch implementation with detailed comments  
-  7. **Data Configuration & Augmentation**  
-     - Hyperparameters (S, B, class count)  
-     - Random flips, color jitters, scaling  
-  8. **Dataset & DataLoader**  
-     - Custom `Dataset` class  
-     - Collate functions for variable-length targets  
-  9. **Training Loop**  
-     - Epoch/iteration structure  
-     - Logging losses and metrics  
-     - Checkpoint saving  
-  10. **Evaluation & Metrics**  
-      - Computing mAP  
-      - Precision/Recall curves  
-  11. **Inference Demo**  
-      - Running on new images  
-      - Visualizing bounding boxes  
+  A comprehensive, annotated walkthrough. Explains *why* each component exists, how it’s implemented in PyTorch, and how data flows through the network.
 
 - **YOLO-V1-Pure-Code.ipynb**  
-  The same code cells—**no markdown**, no commentary—so you can:
-  - Quickly run an end-to-end training demo  
-  - Benchmark on your own images  
-  - Integrate into larger projects without extra text  
+  The identical implementation stripped of all commentary. Ideal for quick experiments, benchmarking, or integration into other projects.
 
 ---
 
-## 🔍 Repository Structure
+## Sample Inference Results
+
+Below are two example outputs produced by the YOLO V1 pipeline:
+
+![Sheep detection result](https://github.com/franciszekparma/YOLOv1-PyTorch/blob/57fb191d9d4beee2dbec3a4bef721fbcf873ea2c/sheep.png)
+
+![Bicycle detection result](https://github.com/franciszekparma/YOLOv1-PyTorch/blob/57fb191d9d4beee2dbec3a4bef721fbcf873ea2c/biker.png)
+
+---
+
+## Prerequisites
+
+- **Python 3.7+**  
+- **pip**  
+- *(Optional)* CUDA-enabled GPU for accelerated training and inference
+
+Install the required packages:
+
+```bash
+pip install torch torchvision opendatasets numpy matplotlib pillow tqdm
+```
+
+---
+
+Getting Started
+	1.	Clone the repository
+
+git clone https://github.com/franciszekparma/YOLOv1-PyTorch.git
+cd YOLOv1-PyTorch
+
+
+	2.	Launch Jupyter Lab or Notebook
+
+jupyter lab   # or: jupyter notebook
+
+
+	3.	Open and run the notebooks
+	•	YOLO-V1-Explanation.ipynb for the full, annotated deep dive.
+	•	YOLO-V1-Pure-Code.ipynb for a no-frills, code-only run.
+
+---
+
+Contributing
+
+Contributions are welcome. Please open an issue or submit a pull request for:
+	•	Bug fixes
+	•	Performance optimizations
+	•	Support for additional datasets
+	•	Documentation improvements
+
+---
+
+Acknowledgements
+	•	“You Only Look Once” (YOLO V1) by Joseph Redmon et al.
+	•	Aladdin Persson for providing Pascal VOC dataset via the opendatasets library.
+	•	Inspiration and reference code from Aladdin Persson’s PyTorch tutorials.
+  •	Tushar Kumar (ExplainingAI) for his theory-focused YOLO V1 tutorial.
+
+---
+
+License
+
+This project is licensed under the MIT License.
+© franciszekparma
+
