@@ -15,7 +15,6 @@ YOLOv1-PyTorch/
 │   │   • Training loop with logging & checkpoints  
 │   │   • Inference examples with visualization  
 │   └── YOLO-V1-Pure-Code.ipynb       # end-to-end pipeline: pure code only (no extra commentary)
-
 │       • Data loading  
 │       • Model definition  
 │       • Loss & optimization  
@@ -92,11 +91,8 @@ Contributions are welcome. Please open an issue or submit a pull request for:
 
 ## Acknowledgements
 •	“You Only Look Once” (YOLO V1) by Joseph Redmon et al.
-
 •	Aladdin Persson for providing Pascal VOC dataset via the opendatasets library.
-
 •	Inspiration and reference code from Aladdin Persson’s PyTorch tutorials.
-
 •	Tushar Kumar (ExplainingAI) for his theory-focused YOLO V1 tutorial.
 
 ---
