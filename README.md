@@ -1,6 +1,6 @@
 # YOLOv1-PyTorch
 
-A **deep dive** into every component of the YOLO V1 object detector — from **downloading and preparing the Pascal VOC data, through network architecture and loss formulation**, all the way to **training, evaluation, and real-time inference.** This repository is designed to give you a **clear, end-to-end understanding** of how YOLO V1 works under the hood in PyTorch.
+A **deep dive** into every component of the YOLO V1 object detector — from **downloading and preparing the Pascal VOC data, through network architecture and loss formulation**, all the way to **training, evaluation, and real-time inference.** This repository is designed to give you a **clear, end-to-end understanding of how YOLO V1 works** under the hood **in PyTorch.**
 
 ---
 
