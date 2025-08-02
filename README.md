@@ -24,7 +24,8 @@ YOLOv1-PyTorch/
 │       ├── Training & evaluation  
 │       └── Inference with bounding-box visualization  
 ├── sheep.png                          # sample inference result on a sheep image  
-├── biker.png                          # sample inference result on a bicycle image  
+├── biker.png                          # sample inference result on a bicycle image
+├── LICENSE                            # MIT License text  
 └── README.md                          # this document    
 ```
 ---
