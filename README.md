@@ -83,11 +83,11 @@ jupyter lab   # or: jupyter notebook
 
 ## Contributing
 
-Contributions are welcome. Please open an issue or submit a pull request for:
-•	Bug fixes
-•	Performance optimizations
-•	Support for additional datasets
-•	Documentation improvements
+Contributions are welcome. Please open an issue or submit a pull request for:  
+•	Bug fixes  
+•	Performance optimizations  
+•	Support for additional datasets  
+•	Documentation improvements  
 
 ---
 
